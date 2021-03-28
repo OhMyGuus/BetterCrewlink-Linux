@@ -1,25 +1,16 @@
-os: unstable
-cache:
-  - node_modules
-environment:
-  matrix:
-    - nodejs_version: 14
-install:
-  - ps: Install-Product node $env:nodejs_version
-  - set CI=true
-  - npm install -g npm@latest
-  - set PATH=%APPDATA%\npm;%PATH%
-  - npm install -g yarn@latest
-  - yarn install
-matrix:
-  fast_finish: true
-test: off
-version: '{build}'
-shallow_clone: true
-clone_depth: 1
+version: 1.0.{build}
+image:
+- Visual Studio 2019
+- Ubuntu2004
 build_script:
-  - yarn run dist --publish never
+- ps: Install-Product node $env:nodejs_version
+- pwsh: >-
+    yarn install
+    yarn run dist --publish never
+    
 artifacts:
-  - path: dist
-    name: unpacked
-    type: zip
+- path: dist
+  name: test
+  type: zip
+ cache:
+  - node_modules
