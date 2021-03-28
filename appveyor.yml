@@ -6,6 +6,7 @@ build_script:
 - ps: Install-Product node $env:nodejs_version
 - pwsh: >-
     yarn install
+    
     yarn run dist --publish never
     
 artifacts:
