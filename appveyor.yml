@@ -12,5 +12,5 @@ artifacts:
 - path: dist
   name: test
   type: zip
- cache:
+cache:
   - node_modules
