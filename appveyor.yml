@@ -20,6 +20,6 @@ clone_depth: 1
 build_script:
   - yarn run dist --publish never
 artifacts:
-  - path: dist/win-unpacked
+  - path: dist
     name: unpacked
     type: zip
