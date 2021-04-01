@@ -1,6 +1,11 @@
 
 [![GPL-3.0 License][license-shield]][license-url] [![Appveyor Build][appveyor-shield]][appveyor-url] [![Donate][paypal-shield]](paypal-url)
 
+<h1>
+This repo is archived and moved back to the main repo: 
+https://github.com/OhMyGuus/BetterCrewlink
+<h1>
+
 <br />
 <p align="center">
   <a href="https://github.com/OhMyGuus/BetterCrewLink">
